@@ -34,7 +34,7 @@ public class RegisterTestCase extends BaseClass{
 		rp.setLastName("aila");
 		test.log(LogStatus.INFO, "Entered firstname, lastname");
 
-		rp.setEmail("saritha740@yahoo2.ca");
+		rp.setEmail("saritha742@yahoo.ca");
 		rp.setTelephoneNumber("41688899977");
 		rp.setPassword("selenium");
 		rp.setConfirmPassword("selenium");
@@ -44,11 +44,11 @@ public class RegisterTestCase extends BaseClass{
 		test.log(LogStatus.INFO, "Account created successfully");
 		test.log(LogStatus.INFO, "clicked loginSubmitButton");
 		String actualTitle=driver.findElement(By.xpath("//*[@id=\"content\"]/h1")).getText();
-		String expectedTitle ="Register Account";
+		String expectedTitle ="Your Account Has Been Created!";
 		Assert.assertEquals(actualTitle, expectedTitle);
 		lo.clickLogout();
 
-		
+	
 	}
 }
 
