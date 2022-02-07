@@ -44,7 +44,7 @@ public class RegisterTestCase extends BaseClass{
 		test.log(LogStatus.INFO, "Account created successfully");
 		test.log(LogStatus.INFO, "clicked loginSubmitButton");
 		String actualTitle=driver.findElement(By.xpath("//*[@id=\"content\"]/h1")).getText();
-		String expectedTitle ="Register Account";	
+		String expectedTitle ="Register Account";
 		Assert.assertEquals(actualTitle, expectedTitle);
 		lo.clickLogout();
 
