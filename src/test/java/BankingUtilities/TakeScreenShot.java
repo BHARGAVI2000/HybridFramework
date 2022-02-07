@@ -22,7 +22,7 @@ public class TakeScreenShot {
 		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		
 		//String destination=System.getProperty("user.dir")+"/Screenshots/"+screenshotName+dateName+".png";
-		String destination="http://localhost:8080/job/HybridFramework1/ws/Screenshots/"+screenshotName+dateName+".png";
+		String destination="https://github.com/BHARGAVI2000/HybridFramework/tree/master/Screenshots"+screenshotName+dateName+".png";
 		
 		File finalDestination = new File(destination);
 		FileUtils.copyFile(src, finalDestination);
