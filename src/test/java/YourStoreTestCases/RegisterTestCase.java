@@ -27,14 +27,14 @@ public class RegisterTestCase extends BaseClass{
 		LogoutPage lo= new LogoutPage(driver);
 //		ap.clickMyAccount();
 //		test.log(LogStatus.INFO, "Clicked MyAccount");
-
+//		test.log(LogStatus.INFO, "Clicked MyAccount");
 		rp.clickRegister();
 		test.log(LogStatus.INFO, "Clicked Register");
 		rp.setFirstName("saritha");
 		rp.setLastName("aila");
 		test.log(LogStatus.INFO, "Entered firstname, lastname");
 
-		rp.setEmail("viggu12@yahoo.ca");
+		rp.setEmail("viggu13@yahoo.ca");
 		rp.setTelephoneNumber("41688899977");
 		rp.setPassword("selenium1");
 		rp.setConfirmPassword("selenium1");
