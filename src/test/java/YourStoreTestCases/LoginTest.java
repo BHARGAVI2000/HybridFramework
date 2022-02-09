@@ -27,7 +27,7 @@ public class LoginTest extends BaseClass{
 //		ap.clickMyAccount();
 //		test.log(LogStatus.INFO, "clicked MyAccount");
 		lp.clicklogin();
-		lp.setEmailID("viggu1@yahoo.ca");
+		lp.setEmailID("viggu11@yahoo.ca");
 		lp.setPassword("selenium1");
 		lp.clickSubmitBtn();
 		test.log(LogStatus.INFO, "clicked loginSubmitButton");
