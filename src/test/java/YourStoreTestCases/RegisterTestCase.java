@@ -34,7 +34,7 @@ public class RegisterTestCase extends BaseClass{
 		rp.setLastName("aila");
 		test.log(LogStatus.INFO, "Entered firstname, lastname");
 
-		rp.setEmail("viggu11@yahoo.ca");
+		rp.setEmail("viggu12@yahoo.ca");
 		rp.setTelephoneNumber("41688899977");
 		rp.setPassword("selenium1");
 		rp.setConfirmPassword("selenium1");
