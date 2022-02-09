@@ -15,8 +15,8 @@ public class LogoutPage extends BaseClass{
 		PageFactory.initElements(driver, this);}
 
 	@FindBy(linkText="Logout")
-	public WebElement logout;
+	public WebElement lout;
 	public void clickLogout() {
-		logout.click();}
+		lout.click();}
 
 }

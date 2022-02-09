@@ -21,12 +21,12 @@ public class RegisterTestCase extends BaseClass{
 
 		Report=XTentReport.getReport();
 		test=Report.startTest("Login test started");
-		MyAccountPage ap= new MyAccountPage(driver);
+//		MyAccountPage ap= new MyAccountPage(driver);
 		RegisterPage rp =new RegisterPage(driver);
 
 		LogoutPage lo= new LogoutPage(driver);
-		ap.clickMyAccount();
-		test.log(LogStatus.INFO, "Clicked MyAccount");
+//		ap.clickMyAccount();
+//		test.log(LogStatus.INFO, "Clicked MyAccount");
 
 		rp.clickRegister();
 		test.log(LogStatus.INFO, "Clicked Register");
@@ -34,10 +34,10 @@ public class RegisterTestCase extends BaseClass{
 		rp.setLastName("aila");
 		test.log(LogStatus.INFO, "Entered firstname, lastname");
 
-		rp.setEmail("saritha742@yahoo.ca");
+		rp.setEmail("viggu1@yahoo.ca");
 		rp.setTelephoneNumber("41688899977");
-		rp.setPassword("selenium");
-		rp.setConfirmPassword("selenium");
+		rp.setPassword("selenium1");
+		rp.setConfirmPassword("selenium1");
 
 		rp.clickAgreecheckbox();
 		rp.clickcontinuebtn();
@@ -46,6 +46,7 @@ public class RegisterTestCase extends BaseClass{
 		String actualTitle=driver.findElement(By.xpath("//*[@id=\"content\"]/h1")).getText();
 		String expectedTitle ="Your Account Has Been Created!";
 		Assert.assertEquals(actualTitle, expectedTitle);
+	//	ap.clickMyAccount();
 		lo.clickLogout();
 
 	
