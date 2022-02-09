@@ -27,7 +27,7 @@ public class RegisterTestCase extends BaseClass{
 		LogoutPage lo= new LogoutPage(driver);
 //		ap.clickMyAccount();
 //		test.log(LogStatus.INFO, "Clicked MyAccount");
-//		test.log(LogStatus.INFO, "Clicked MyAccount");
+
 		rp.clickRegister();
 		test.log(LogStatus.INFO, "Clicked Register");
 		rp.setFirstName("saritha");
