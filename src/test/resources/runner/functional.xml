@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="RegressionSuite">
-	<test thread-count="5" name="MyAccount">
+<listeners>
+		<listener class-name="BankingUtilities.TestNGListener"/>
+	</listeners>
+	<test name="MyAccount">
 		<classes>
 			<class name="YourStoreTestCases.MyAccountTestCase"/>
 		</classes>
@@ -13,7 +16,7 @@
 	</test>
 	<test name="Login">
 		<classes>
-			<class name="YourStoreTestCases.LoginTest" />
+			<class name="YourStoreTestCases.LoginTest"/>
 		</classes>
 	</test>
 </suite> 

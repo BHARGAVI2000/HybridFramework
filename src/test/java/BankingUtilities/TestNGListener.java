@@ -28,8 +28,7 @@ public class TestNGListener  extends BaseClass implements ITestListener,ISuiteLi
 	}
 
 	public void onTestSuccess(ITestResult result) {
-		test.log(LogStatus.PASS, "Login test is Passed"+result.getMethod().getMethodName());	
-
+		test.log(LogStatus.PASS, "Test is Passed"+result.getMethod().getMethodName());	
 		Report.endTest(test);
 		Report.flush();
 	}
@@ -37,8 +36,11 @@ public class TestNGListener  extends BaseClass implements ITestListener,ISuiteLi
 	public void onTestFailure(ITestResult result) {
 
 
-		test.log(LogStatus.FAIL, "Login test is failed"+result.getMethod().getMethodName());
-		test.log(LogStatus.FAIL,"Login test is failed"+result.getThrowable());
+		test.log(LogStatus.FAIL, "Test is failed"+result.getMethod().getMethodName());
+		test.log(LogStatus.FAIL,"Test is failed"+result.getThrowable());
+//		test.log(LogStatus.FAIL, "Login test is failed"+result.getMethod().getMethodName());
+//		test.log(LogStatus.FAIL,"Login test is failed"+result.getThrowable());
+
 
 		try {
 			screenshotPath = TakeScreenShot.getScreenShot(driver, result.getName());

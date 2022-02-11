@@ -66,8 +66,8 @@ public class BaseClass {
 				driver = new EdgeDriver();
 			}
 			driver.manage().window().maximize();
-			//driver.get(config.getProperty("testsiteURL"));
-			driver.get("https://demo.opencart.com");
+			driver.get(config.getProperty("testsiteURL"));
+			//driver.get("https://demo.opencart.com");
 			
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
