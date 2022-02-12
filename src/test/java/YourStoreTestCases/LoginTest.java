@@ -7,9 +7,9 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
 
-import BankingBase.BaseClass;
-import BankingUtilities.XTentReport;
-import YourStorePages.LoginPage;
+import yourStoreBase.BaseClass;
+import yourStorePages.LoginPage;
+import yourStoreUtilities.XTentReport;
 
 
 

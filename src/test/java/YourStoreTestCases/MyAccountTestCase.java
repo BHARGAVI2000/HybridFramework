@@ -6,11 +6,11 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
 
-import BankingBase.BaseClass;
-import BankingUtilities.XTentReport;
-import YourStorePages.MyAccountPage;
+import yourStoreBase.BaseClass;
+import yourStorePages.MyAccountPage;
+import yourStoreUtilities.XTentReport;
 
-@Listeners(BankingUtilities.TestNGListener.class)
+@Listeners(yourStoreUtilities.TestNGListener.class)
 
 public class MyAccountTestCase extends BaseClass{
  

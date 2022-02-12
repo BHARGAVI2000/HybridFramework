@@ -2,15 +2,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [RegressionSuite]">
   <listeners>
-    <listener class-name="BankingUtilities.TestNGListener"/>
+    <listener class-name="yourStoreUtilities.TestNGListener"/>
   </listeners>
   <test name="Register(failed)">
     <classes>
       <class name="YourStoreTestCases.RegisterTestCase">
         <methods>
-          <include name="tearDown"/>
-          <include name="Register"/>
           <include name="init"/>
+          <include name="Register"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- YourStoreTestCases.RegisterTestCase -->
     </classes>

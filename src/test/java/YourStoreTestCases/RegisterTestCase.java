@@ -7,23 +7,10 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
 
-import BankingBase.BaseClass;
-import BankingUtilities.XTentReport;
-import YourStorePages.LogoutPage;
-
-import YourStorePages.RegisterPage;
-
-
-
-
-
-
-
-
-
-
-
-
+import yourStoreBase.BaseClass;
+import yourStorePages.LogoutPage;
+import yourStorePages.RegisterPage;
+import yourStoreUtilities.XTentReport;
 
 public class RegisterTestCase extends BaseClass{
 	@Test

@@ -148,7 +148,7 @@
                   </a> <!-- Register -->
                   <span class="method-name">Register</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [Your Account Has Been Created!] but found [Register Account]
-	at YourStoreTestCases.RegisterTestCase.Register(RegisterTestCase.java:55)
+	at YourStoreTestCases.RegisterTestCase.Register(RegisterTestCase.java:42)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -196,7 +196,7 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;RegressionSuite&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;BankingUtilities.TestNGListener&quot;/&gt;
+    &lt;listener class-name=&quot;yourStoreUtilities.TestNGListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test name=&quot;MyAccount&quot;&gt;
     &lt;classes&gt;
@@ -260,15 +260,15 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Register')
 data.setCell(0, 2, 'YourStoreTestCases.RegisterTestCase')
-data.setCell(0, 3, 4020);
+data.setCell(0, 3, 3892);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'login')
 data.setCell(1, 2, 'YourStoreTestCases.LoginTest')
-data.setCell(1, 3, 2254);
+data.setCell(1, 3, 1718);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'myAccount')
 data.setCell(2, 2, 'YourStoreTestCases.MyAccountTestCase')
-data.setCell(2, 3, 500);
+data.setCell(2, 3, 816);
 window.suiteTableData['RegressionSuite']= { tableData: data, tableDiv: 'times-div-RegressionSuite'}
 return data;
 }
@@ -309,7 +309,7 @@ return data;
               <div class="chronological-class-name">YourStoreTestCases.MyAccountTestCase</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">myAccount</span>
-                <span class="method-start">9368 ms</span>
+                <span class="method-start">6184 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -318,18 +318,18 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Register</span>
-                <span class="method-start">10297 ms</span>
+                <span class="method-start">7415 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">YourStoreTestCases.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">14566 ms</span>
+                <span class="method-start">11534 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16884 ms</span>
+                <span class="method-start">13305 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

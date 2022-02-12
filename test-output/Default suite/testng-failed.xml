@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="BankingTestCases1.AddPayeeDatadriven">
+      <class name="BankingTestCases1.AddPayeeWithListener">
         <methods>
           <include name="tearDown"/>
-          <include name="addPayee" invocation-numbers="1 2 3"/>
+          <include name="addPayee"/>
+          <include name="login"/>
           <include name="init"/>
         </methods>
-      </class> <!-- BankingTestCases1.AddPayeeDatadriven -->
+      </class> <!-- BankingTestCases1.AddPayeeWithListener -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
