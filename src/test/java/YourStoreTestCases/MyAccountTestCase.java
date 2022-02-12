@@ -18,7 +18,7 @@ public class MyAccountTestCase extends BaseClass{
 	public void myAccount() throws InterruptedException {
 
 		Report=XTentReport.getReport();
-		test=Report.startTest("Login test started");
+		test=Report.startTest("MyAccount test started");
 		//test=Report.startTest("MyAccount test started");
 		MyAccountPage ap = new MyAccountPage(driver);
 		ap.clickMyAccount();
